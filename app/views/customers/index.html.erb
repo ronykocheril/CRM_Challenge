@@ -1,0 +1,11 @@
+<h1>All Customers</h1>
+
+<% @cust_all.each do |customer| %>
+  <div>
+    <ul>
+      <li><h2> <%= customer.FullName %> </h2></li>
+        <li> <%= image_tag customer.Image %> </li>
+    </ul>
+  </div>
+
+<% end %>
