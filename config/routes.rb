@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'customers/alphabetized'
+
   get 'customers/index', to: 'customers#index', as: 'customers'
 
   root  'customers#index'
