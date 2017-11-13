@@ -3,6 +3,20 @@
     <ul class="ul-style">
       <li><h2> <%= customer.FullName %> </h2></li>
         <li> <%= image_tag customer.Image %> </li>
+
+        <% if customer.province_id != nil %>
+          <li><strong>Province: </strong><%= customer.province.name %></li>
+      <% else %>
+          <li><strong>Province: </strong>None</li>
+      <% end %>
+
+
+        <li><%= customer.PhoneNumber %></li>
+      </br>
+        </br>
+          </br>
+        <li><%= customer.EmailAddress %></li>
+
     </ul>
 
   </div>
