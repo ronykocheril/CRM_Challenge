@@ -1,9 +1,13 @@
+<h1>All Customers</h1>
 <% @cust_all.each do |customer| %>
   <div>
-    <ul>
+    <ul style="border:2px solid black; display:inline-block; width:350px; float:left">
       <li><h2> <%= customer.FullName %> </h2></li>
         <li> <%= image_tag customer.Image %> </li>
     </ul>
+
   </div>
 
 <% end %>
+
+  <div style="clear:both"></div>
